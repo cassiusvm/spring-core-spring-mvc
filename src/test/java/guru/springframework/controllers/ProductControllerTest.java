@@ -49,18 +49,10 @@ public class ProductControllerTest {
 		// specific Mockito interaction, tell stub to return list of products
 		when(productService.listAll()).thenReturn((List) products); // need to strip generics to keep Mockito happy.
 
-<<<<<<< HEAD
-        mockMvc.perform(get("/product/list"))
-                .andExpect(status().isOk())
-                .andExpect(view().name("product/list"))
-                .andExpect(model().attribute("products", hasSize(2)));
-    }
-=======
 		mockMvc.perform(get("/product/list")).andExpect(status().isOk()).andExpect(view().name("product/list"))
 				.andExpect(model().attribute("products", hasSize(2)));
 
 	}
->>>>>>> refs/heads/spring-mvc-test-crud
 
 	@Test
 	public void testShow() throws Exception {

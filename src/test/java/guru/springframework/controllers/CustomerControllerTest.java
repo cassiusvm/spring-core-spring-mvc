@@ -126,7 +126,7 @@ public class CustomerControllerTest {
         .param("email", email)
         .param("phoneNumber", phoneNumber))
                 .andExpect(status().is3xxRedirection())
-                .andExpect(view().name("redirect:customer/show/1"))
+                .andExpect(view().name("redirect:/customer/show/1"))
                 .andExpect(model().attribute("customer", instanceOf(Customer.class)))
                 .andExpect(model().attribute("customer", hasProperty("firstName", is(firstName))))
                 .andExpect(model().attribute("customer", hasProperty("lastName", is(lastName))))

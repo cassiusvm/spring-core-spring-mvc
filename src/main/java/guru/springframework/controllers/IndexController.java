@@ -8,13 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
  */
 @Controller
 public class IndexController {
-
-<<<<<<< HEAD
-    @RequestMapping({"/", ""})
-=======
-    @GetMapping("/")
->>>>>>> refs/heads/spring-mvc-test-crud
-    public String index(){
-        return "index";
-    }
+	@GetMapping("/")
+	public String index() {
+		return "index";
+	}
 }
