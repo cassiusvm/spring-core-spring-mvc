@@ -1,7 +1,7 @@
 package guru.springframework.controllers;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 
 /**
  * Created by jt on 11/6/15.
@@ -9,7 +9,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class IndexController {
 
+<<<<<<< HEAD
     @RequestMapping({"/", ""})
+=======
+    @GetMapping("/")
+>>>>>>> refs/heads/spring-mvc-test-crud
     public String index(){
         return "index";
     }
