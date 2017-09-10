@@ -1,23 +1,22 @@
 package guru.springframework.services;
 
-import guru.springframework.config.JpaIntegrationConfig;
 import guru.springframework.domain.Product;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.SpringApplicationConfiguration;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.List;
 
 /**
  * Created by jt on 12/14/15.
  */
-@RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(JpaIntegrationConfig.class)
+@RunWith(SpringRunner.class)
+@SpringBootTest
 @ActiveProfiles("jpadao")
-public class ProductServiceJapDaoImplTest {
+public class ProductServiceJpaDaoImplTest {
 
     private ProductService productService;
 
