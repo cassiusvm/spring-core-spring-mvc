@@ -14,24 +14,24 @@ import java.util.List;
 @Profile("map")
 public class ProductServiceImpl extends AbstractMapService implements ProductService {
 
-    @Override
-    public List<DomainObject> listAll() {
-        return super.listAll();
-    }
+	@Override
+	public List<DomainObject> listAll() {
+		return super.listAll();
+	}
 
-    @Override
-    public Product getById(Integer id) {
-        return (Product) super.getById(id);
-    }
+	@Override
+	public Product getById(Integer id) {
+		return (Product) super.getById(id);
+	}
 
-    @Override
-    public Product saveOrUpdate(Product domainObject) {
-        return (Product) super.saveOrUpdate(domainObject);
-    }
+	@Override
+	public Product saveOrUpdate(Product domainObject) {
+		return (Product) super.saveOrUpdate(domainObject);
+	}
 
-    @Override
-    public void delete(Integer id) {
-        super.delete(id);
-    }
+	@Override
+	public void delete(Integer id) {
+		super.delete(id);
+	}
+}
 
-   }

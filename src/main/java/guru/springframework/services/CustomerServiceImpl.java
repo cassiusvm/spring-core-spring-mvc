@@ -14,24 +14,23 @@ import java.util.List;
 @Profile("map")
 public class CustomerServiceImpl extends AbstractMapService implements CustomerService {
 
-    @Override
-    public List<DomainObject> listAll() {
-        return super.listAll();
-    }
+	@Override
+	public List<DomainObject> listAll() {
+		return super.listAll();
+	}
 
-    @Override
-    public Customer getById(Integer id) {
-        return (Customer) super.getById(id);
-    }
+	@Override
+	public Customer getById(Integer id) {
+		return (Customer) super.getById(id);
+	}
 
-    @Override
-    public Customer saveOrUpdate(Customer domainObject) {
-        return (Customer) super.saveOrUpdate(domainObject);
-    }
+	@Override
+	public Customer saveOrUpdate(Customer domainObject) {
+		return (Customer) super.saveOrUpdate(domainObject);
+	}
 
-    @Override
-    public void delete(Integer id) {
-        super.delete(id);
-    }
-
+	@Override
+	public void delete(Integer id) {
+		super.delete(id);
+	}
 }
